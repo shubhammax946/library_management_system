@@ -48,21 +48,30 @@ echo "<script>alert('Invalid Details');</script>";
     <meta name="author" content="" />
     <title>Online Library Management System | </title>
     <!-- BOOTSTRAP CORE STYLE  -->
-    <link href="tools/css/bootstrap.css" rel="stylesheet" />
+
     <!-- FONT AWESOME STYLE  -->
-    <link href="tools/css/font-awesome.css" rel="stylesheet" />
+  
     <!-- CUSTOM STYLE  -->
-    <link href="tools/css/style.css" rel="stylesheet" />
+   
     <!-- GOOGLE FONT -->
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 </head>
 <body>
     <!------MENU SECTION START-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top:-60px">
+<div class="nav-baa"> <div class="container">
+            <div class="navbar-header">
+                
+               
+ 
+
+        </div>
+    </div>
     <?php include('includes/header.php');?>
+    <?php include('signup.php');?>
 <!-- MENU SECTION END-->
-<div class="content-wrapper">
+<div class="content-wrapper" style="margin-bottom:300px;">
 <div class="container">
 <!--Slider---->
      <div class="row" style="margin-bottom:50px">
@@ -95,22 +104,24 @@ echo "<script>alert('Invalid Details');</script>";
                 </div>
               </div>
              </div>
-<hr />
+<hr/>
 
-<br>
-<br>
-<br>
+<a name="ulogin" ></a> 
+<?php include('includes/header.php');?>   
+<h4 class="header-line">USER LOGIN FORM</h4> 
+<section style=" margin-top:100px;  width:102%; " id="userlogin">
 
-<section style="margin-tp:100px; width:102%;">
-<?php include('includes/header.php');?>
 <div class="row pad-botm" >
+
+
 <div class="col-md-12">
-<h4 class="header-line">USER LOGIN FORM</h4>
+
 
 </div>
+
 </div>
 
- <a name="ulogin"></a>            
+       
 <!--LOGIN PANEL START-->           
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
@@ -143,23 +154,121 @@ echo "<script>alert('Invalid Details');</script>";
 </section>
 <!---LOGIN PABNEL END-->            
              
- 
+
     </div>
     </div>
      <!-- CONTENT-WRAPPER SECTION END-->
  
-      <!-- FOOTER SECTION END-->
-    <script src="tools/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="tools/js/bootstrap.js"></script>
-      <!-- CUSTOM SCRIPTS  -->
-    <script src="tools/js/custom.js"></script>
-    <script>
+     
+    <!-- admin strt -->
+    
+<a name="uadminlogin"></a>     
+<?php include('includes/header.php');?>
+<section style=" margin-top:100px;  width:102%;" id="adminlogi">
 
-        </script>
-  
+<h4 class="header-line">ADMIN LOGIN FORM</h4>
+<div class="row pad-botm" >
+
+<div class="col-md-12">
 
 
+
+</div>
+
+</div>
+
+       
+<!--LOGIN PANEL START-->           
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
+<div class="panel panel-info">
+<div class="panel-heading">
+<div class="col-md-12">
+<h4 class="header-line">ADMIN LOGIN FORM</h4>
+</div>
+</div>
+<div class="panel-body">
+<form role="form" method="post">
+
+<div class="form-group">
+<label>Enter Username</label>
+<input class="form-control" type="text" name="username" autocomplete="off" required />
+</div>
+<div class="form-group">
+<label>Password</label>
+<input class="form-control" type="password" name="password" autocomplete="off" required />
+</div>
+
+ <button type="submit" name="login" class="btn btn-info">LOGIN </button>
+</form>
+ </div>
+</div>
+</div>
+</div>  
+</section>
+    <!-- adminend -->
+  <section  >
+  <!-- user sign upn  form -->
+  <a name="usignup"></a>           
+    <!------MENU SECTION START-->
+<?php include('includes/header.php');?>
+<!-- MENU SECTION END-->
+    <div class="content-wrapper">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header-line">User Signup</h4>
+                
+                            </div>
+
+        </div>
+             <div class="row">
+           
+<div class="col-md-9 col-md-offset-1">
+               <div class="panel panel-danger">
+                        <div class="panel-heading">
+                           SINGUP FORM
+                        </div>
+                        <div class="panel-body">
+                            <form name="signup" method="post" onSubmit="return valid();">
+<div class="form-group">
+<label>Enter Full Name</label>
+<input class="form-control" type="text" name="fullanme" autocomplete="off" required />
+</div>
+
+
+<div class="form-group">
+<label>Mobile Number :</label>
+<input class="form-control" type="text" name="mobileno" maxlength="10" autocomplete="off" required />
+</div>
+                                        
+<div class="form-group">
+<label>Enter Email</label>
+<input class="form-control" type="email" name="email" id="emailid" onBlur="checkAvailability()"  autocomplete="off" required  />
+   <span id="user-availability-status" style="font-size:12px;"></span> 
+</div>
+
+<div class="form-group">
+<label>Enter Password</label>
+<input class="form-control" type="password" name="password" autocomplete="off" required  />
+</div>
+
+<div class="form-group">
+<label>Confirm Password </label>
+<input class="form-control"  type="password" name="confirmpassword" autocomplete="off" required  />
+</div>
+                             
+<button type="submit" name="signup" href="index.php#usignup class="btn btn-danger" id="submit">Register Now </button>
+
+                                    </form>
+                            </div>
+                        </div>
+                            </div>
+        </div>
+    </div>
+    </div>
+</section>
+    <!-- end user sign up page -->
 </body>
 
 </html>
