@@ -172,7 +172,6 @@ echo "<script>alert('Invalid Details');</script>";
 <div class="col-md-12">
 
 
-
 </div>
 
 </div>
