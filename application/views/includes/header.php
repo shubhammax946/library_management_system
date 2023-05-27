@@ -42,7 +42,7 @@
                           
       <li><a href="index.php">Home</a></li>
       <li><a href="index.php#ulogin">User Login</a></li>
-      <li><a href="index.php#usignup">Sign Up</a></li>
+      <li><a href="signup.php">Sign Up</a></li>
      <li><a href="http://localhost/ci/admin.php">Admin Login</a></li>
 
 
