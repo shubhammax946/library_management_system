@@ -7,12 +7,14 @@ class Home extends CI_Controller{
     public function index(){
         $this->load->view('home');
        $this->load->view('signup');
-      
-      
-        
+     $this->load->view('adminlogin');
+   
+     
     }
-    public function admin(){
-      $this->load->view('admin');
+    public function dash(){
+      $this->load->view('dashboard');
+    
+ 
     }
     
 }

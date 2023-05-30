@@ -3,7 +3,7 @@
 define('DB_HOST','localhost:3308');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','library');
+define('DB_NAME','library_managment');
 // Establish database connection.
 try
 {
