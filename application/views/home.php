@@ -129,7 +129,7 @@ echo "<script>alert('Invalid Details');</script>";
  LOGIN FORM
 </div>
 <div class="panel-body">
-<form role="form" method="post" id="login" action="k.php">
+<form role="form" method="post" id="login" action="">
 
 <div class="form-group">
 <label>Enter Email id</label>

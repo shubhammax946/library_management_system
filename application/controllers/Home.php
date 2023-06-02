@@ -4,19 +4,42 @@ class Home extends CI_Controller{
   {
     parent::__construct();
   }
-    public function index(){
+    public function index()
+    {
         $this->load->view('home');
-       $this->load->view('signup');
-     $this->load->view('adminlogin');
-   
-     
+        $this->load->view('signup');
+         $this->load->view('adminlogin');
     }
-    public function dash(){
+    public function dash()
+    {
+
       $this->load->view('dashboard');
+    }
+   
+public function book(){
+
+  $this->load->view('book_list/index_b');
+ 
+
+
+
+ $this->load->view('book_list/create_b');
+
+ $this->load->view('book_list/delete_b');
+ $this->load->view('book_list/edit_b');
+
+ $this->load->view('book_list/process_b');
+
+ $this->load->view('book_list/view_b');
+}
+
+      
     
  
-    }
+  
+
     
 }
 
 ?>
+
